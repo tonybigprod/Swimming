@@ -5,31 +5,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Vanilla JavaScript App</title>
+    <title>Swimming ABC</title>
 </head>
-
 <body>
+
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+
+    <div id="root"></div>
     <h1>Vanilla JavaScript App</h1>
     <p>Testing</p>
-    <p id="root">Test2</p>
+    <div id="root"></div>
+
+
+    <script src="script.js"></script>
 </body>
 
 </html>
 
-<script type="text/jsx">
-    function formatName(user) {
-        return user.firstName + ' ' + user.lastName;
+<script type="text/babel">
+            function formatName(user) {
+      return user.firstName + ' ' + user.lastName;
     }
 
     const user = {
-        firstName: 'Harper',
-        lastName: 'Perez'
+      firstName: 'Harper',
+      lastName: 'Perez'
     };
 
     const element = (
-        <h1>
-            Hello, {formatName(user)}!
-        </h1>
+      <h1>
+        Hello, {formatName(user)}!
+      </h1>
     );
 
     const root = ReactDOM.createRoot(document.getElementById('root'));
