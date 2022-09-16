@@ -9,11 +9,9 @@
 </head>
 
 <body>
-    <main>
-        <h1>Vanilla JavaScript App</h1>
-        <p>Testing</p>
-        <p id="testPara"></p>
-    </main>
+    <h1>Vanilla JavaScript App</h1>
+    <p>Testing</p>
+    <p id="root">Test2</p>
 </body>
 
 </html>
@@ -34,7 +32,7 @@
         </h1>
     );
 
-    const root = ReactDOM.createRoot(document.getElementById('testPara'));
+    const root = ReactDOM.createRoot(document.getElementById('root'));
     root.render(<h1>Hello, world!</h1>);
 
 </script>
